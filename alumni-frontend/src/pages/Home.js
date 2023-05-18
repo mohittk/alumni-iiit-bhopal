@@ -1,12 +1,10 @@
 import React from "react";
-import Card from "../components/Card";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <>
-      <div className="text-[#A020F0]">
-        <Card />
-      </div>
-    </>
+    <div>
+      <Navbar />
+    </div>
   );
 }
