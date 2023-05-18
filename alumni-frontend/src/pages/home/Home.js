@@ -7,11 +7,13 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
+import Navbar from "../../components/Navbar";
 
 export default function App() {
   return (
     <>
-      {/* <div className="p-[100px]">
+      <Navbar/>
+      <div className="p-[100px]">
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
@@ -29,8 +31,8 @@ export default function App() {
           <SwiperSlide><Card/></SwiperSlide>
           <SwiperSlide><Card/></SwiperSlide>
         </Swiper>
-      </div> */}
-      {/* <Meetup/> */}
+      </div>
+      <Meetup/>
 
       <QueryForm/>
     </>
