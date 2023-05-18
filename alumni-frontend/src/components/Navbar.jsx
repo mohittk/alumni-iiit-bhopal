@@ -15,20 +15,20 @@ function Navbar() {
           <div className="flex gap-[5px] text-[28px] text-white justify-center items-center">
             <FaHandshake />
             <span className="font-[Inter] text-[22px]">
-              Strong Roots, Wide Reach.
+              "Once an alumnus, forever a part of our legacy."
             </span>
           </div>
-          <div className="flex flex-row gap-[15px] text-[28px] text-[#eded04]">
-            <Link to="#">
+          <div className="flex flex-row gap-[15px] text-[28px]">
+            <Link to="#" className="text-[#eded04]">
               <FaFacebookSquare />
             </Link>
-            <Link to="#">
+            <Link to="#" className="text-[#eded04]">
               <BsTwitter />
             </Link>
-            <Link to="#">
+            <Link to="#" className="text-[#eded04]">
               <RiLinkedinFill />
             </Link>
-            <Link to="#">
+            <Link to="#" className="text-[#eded04]">
               <AiFillInstagram />
             </Link>
           </div>
@@ -41,39 +41,56 @@ function Navbar() {
             <ImLocation className="text-[60px] text-[#0a6db7]" />
             <span className="flex flex-col w-[90%]">
               <h1 className="text-[20px] font-bold ">IIIT Bhopal</h1>
-              <h1 className="text-[15px] text-[#6f42c1]">
+              <h1 className="text-[15px] text-[#6f42c1] font-semibold">
                 C/O Maulana Azad National Institute of Technology (MANIT),
-                Bhopal Room No TC-105, New Teaching Block, MANIT, Bhopal, MP,
-                India
+                Bhopal<br></br>Room No TC-105, New Teaching Block, MANIT,
+                Bhopal, MP, India
               </h1>
-              <h1 className="text-[15px] text-[#6f42c1]">
+              <h1 className="text-[15px] text-[#6f42c1] font-semibold">
                 Pin code : 462003 Phone : 0755-4051950 Email:
                 info@iiitbhopal.ac.in
               </h1>
             </span>
           </span>
         </div>
-        <div className="flex gap-[10px] text-[21px] font-[sans-serif] font-normal text-white bg-[#2a004f] justify-evenly items-center z-[10] px-[15px] h-[78px]  w-full">
-          <div className="hover:border-t-2 hover:z-[10px] py-[10px]">Home</div>
-          <div className="hover:border-t-2 hover:z-[10px] py-[10px]">
+        <div className="flex gap-[10px] text-[21px] font-[sans-serif] font-normal text-white bg-[#2a004f] justify-evenly items-center z-[10] px-[15px] h-[78px] w-full">
+          <Link
+            to="/"
+            className="hover:border-t-2 hover:z-[10px] py-[10px] text-white font-semibold"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+          >
             About Us
-          </div>
-          <div className="hover:border-t-2 hover:z-[10px] py-[10px]">
+          </Link>
+          <Link
+            to="/"
+            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+          >
             Alumni
-          </div>
-          <div className="hover:border-t-2 hover:z-[10px] py-[10px]">
+          </Link>
+          <Link
+            to="/"
+            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+          >
             Events
-          </div>
-          <div className="hover:border-t-2 hover:z-[10px] py-[10px]">
+          </Link>
+          <Link
+            to="/"
+            className="hover:border-t-2 text-white hover:z-[10px] py-[10px] font-semibold"
+          >
             Donation/Give Back
-          </div>
-          <div className="hover:border-t-2 hover:z-[10px] py-[10px]">
+          </Link>
+          <Link
+            to="/"
+            className="hover:border-t-2 text-white hover:z-[10px] py-[10px] font-semibold"
+          >
             Alumni Chapters
-          </div>
-          <div className="hover:border-t-2 hover:z-[10px] py-[10px]">
-            Newsletters
-          </div>
-          <div className="flex items-center hover:border-t-2 py-[10px] justify-center gap-[5px]">
+          </Link>
+          <div className="flex items-center hover:border-t-2 py-[10px] justify-center gap-[5px] font-semibold">
             Convocation
             <span className="flex px-[3px] py-[2px] text-[16px] animate-bounce bg-[#e03574] rounded-md">
               New

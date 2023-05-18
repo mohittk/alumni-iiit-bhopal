@@ -22,7 +22,7 @@ function Footer() {
             <span className="flex flex-col gap-[2px] m-[10px] text-[22px] text-white font-[Poppins]">
               Follow Us
               <span className="flex flex-row gap-[5px] text-[22px] justify-center items-center ">
-                <Link to="#">
+                <Link to="#" className="text-white">
                   <FaFacebookSquare />
                 </Link>
               </span>
@@ -32,42 +32,42 @@ function Footer() {
             <h1 className="text-[32px] font-bold font-[Inter]">Useful Links</h1>
             <Link
               to="https://iiitbhopal.ac.in"
-              className="hover:text-[#0a6db7] flex flex-row justify-center items-center"
+              className="hover:text-[#0a6db7] text-white flex flex-row justify-center items-center"
             >
               <AiOutlineRight />
               <span>IIIT Bhopal Website</span>
             </Link>
             <Link
               to="https://iiitbhopal.ac.in"
-              className="hover:text-[#0a6db7]  flex flex-row justify-center items-center"
+              className="hover:text-[#0a6db7]  text-white flex flex-row justify-center items-center"
             >
               <AiOutlineRight />
               <span>Dept. of CSE</span>
             </Link>
             <Link
               to="https://iiitbhopal.ac.in"
-              className="hover:text-[#0a6db7]  flex flex-row justify-center items-center"
+              className="hover:text-[#0a6db7] text-white flex flex-row justify-center items-center"
             >
               <AiOutlineRight />
               <span>Dept. of IT</span>
             </Link>
             <Link
               to="https://iiitbhopal.ac.in"
-              className="hover:text-[#0a6db7]  flex flex-row justify-center items-center"
+              className="hover:text-[#0a6db7] text-white flex flex-row justify-center items-center"
             >
               <AiOutlineRight />
               <span>Dept. of ECE</span>
             </Link>
             <Link
               to="https://iiitbhopal.ac.in"
-              className="hover:text-[#0a6db7]  flex flex-row justify-center items-center"
+              className="hover:text-[#0a6db7] text-white flex flex-row justify-center items-center"
             >
               <AiOutlineRight />
               <span>AAA Section</span>
             </Link>
             <Link
               to="https://iiitbhopal.ac.in"
-              className="hover:text-[#0a6db7]  flex flex-row justify-center items-center"
+              className="hover:text-[#0a6db7]  text-white flex flex-row justify-center items-center"
             >
               <AiOutlineRight />
               <span>Library</span>
@@ -77,7 +77,7 @@ function Footer() {
             <h1 className="text-[32px] font-bold font-[Inter]">Recent News</h1>
             <Link
               to="#"
-              className="hover:text-[#0a6db7] gap-[5px] flex flex-row justify-center items-start"
+              className="hover:text-[#0a6db7] gap-[5px] flex text-white flex-row justify-center items-start"
             >
               <img
                 src="https://alumni.iiita.ac.in/wp-content/uploads/2022/06/Congrattulation-Students-who-got-successed-1.png"
@@ -91,7 +91,7 @@ function Footer() {
             </Link>
             <Link
               to="#"
-              className="hover:text-[#0a6db7] gap-[5px] flex flex-row justify-center items-start"
+              className="hover:text-[#0a6db7] gap-[5px] text-white flex flex-row justify-center items-start"
             >
               <img
                 src="https://alumni.iiita.ac.in/wp-content/uploads/2022/06/Congrattulation-Students-who-got-successed-1.png"
@@ -112,7 +112,7 @@ function Footer() {
               <ImLocation className="text-[30px] text-[#0a6db7]" />
               <span className="flex flex-col w-[90%]">
                 <h1 className="text-[20px] font-bold ">IIIT Bhopal</h1>
-                <h1 className="text-[15px] text-white w-[200px]">
+                <h1 className="text-[15px] text-white w-[200px] ">
                   C/O Maulana Azad National Institute of Technology (MANIT),
                   Bhopal Room No TC-105, New Teaching Block, MANIT, Bhopal, MP,
                   India
