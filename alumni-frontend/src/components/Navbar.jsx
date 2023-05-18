@@ -53,7 +53,7 @@ function Navbar() {
             </span>
           </span>
         </div>
-        <div className="flex gap-[10px] text-[21px] font-[sans-serif] font-normal text-white bg-[#2a004f] justify-evenly items-center z-[10] px-[15px] h-[78px] w-full">
+        <div className="flex gap-[10px] text-[21px] font-[sans-serif] font-normal text-white bg-[#2a004f] justify-evenly items-center z-[10] px-[15px] h-[78px]  w-full">
           <div className="hover:border-t-2 hover:z-[10px] py-[10px]">Home</div>
           <div className="hover:border-t-2 hover:z-[10px] py-[10px]">
             About Us
