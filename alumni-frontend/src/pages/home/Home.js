@@ -10,11 +10,13 @@ import { FreeMode, Pagination } from "swiper";
 import Navbar from "../../components/Navbar";
 import Corousel from "../../components/Corousel";
 import Footer from "../../components/Footer";
+import MsgDirector from "../about/MsgDirector";
+import ContactUs from "../about/ContactUs";
 
 export default function App() {
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/>
       <Corousel/>
       <div className="p-[100px]">
         <Swiper
@@ -50,7 +52,9 @@ export default function App() {
       <Meetup />
 
       <QueryForm />
-      <Footer />
+      <Footer /> */}
+      {/* <MsgDirector/> */}
+      <ContactUs/>
     </>
   );
 }
