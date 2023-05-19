@@ -1,7 +1,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'opensans': ['Open Sans', 'sans-serif']
+      }
+    },
+  },
+  variants: {
+    display: ["group-hover"],
   },
   plugins: [],
 };

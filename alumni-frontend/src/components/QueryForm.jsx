@@ -63,7 +63,7 @@ const QueryForm = () => {
     <>
       <div class="main-bg">
         <hr />
-        <h1 className="text-center text-[#107CAF] font-bold">Get In Touch</h1>
+        <h1 className="text-center text-[#107CAF] font-bold font-opensans">Get In Touch</h1>
         <p className="text-center">
           If you have any query kindly feel free to contact us!
         </p>

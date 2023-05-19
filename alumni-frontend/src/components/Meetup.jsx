@@ -9,7 +9,7 @@ const Meetup = () => {
   return (
     <>
       <div className="p-[50px]">
-        <h1 className="text-center text-[#107CAF] font-bold">
+        <h1 className="text-center text-[#107CAF] font-bold font-opensans">
           Our Recent Meetup (2022)
         </h1>
         {/* <div className='flex flex-row'>
