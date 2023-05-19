@@ -56,46 +56,46 @@ function Navbar() {
         <div className="flex gap-[10px] text-[21px] font-[sans-serif] font-normal text-white bg-[#2a004f] justify-evenly items-center z-[10] px-[15px] h-[78px] w-full">
           <Link
             to="/"
-            className="hover:border-t-2 hover:z-[10px] py-[10px] text-white font-semibold"
+            className="hover:border-t-2 hover:no-underline hover:z-[10px] py-[10px] text-white font-semibold no-underline"
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+            className="hover:border-t-2 hover:no-underline hover:z-[10px] text-white py-[10px] font-semibold no-underline"
           >
             About Us
           </Link>
           <Link
             to="/"
-            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+            className="hover:border-t-2 hover:no-underline hover:z-[10px] text-white py-[10px] font-semibold no-underline"
           >
             Alumni
           </Link>
           <Link
             to="/"
-            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+            className="hover:border-t-2 hover:no-underline hover:z-[10px] text-white py-[10px] font-semibold no-underline"
           >
             Events
           </Link>
           <Link
             to="/"
-            className="hover:border-t-2 text-white hover:z-[10px] py-[10px] font-semibold"
+            className="hover:border-t-2 hover:no-underline text-white hover:z-[10px] py-[10px] font-semibold no-underline"
           >
             Donation/Give Back
           </Link>
           <Link
             to="/"
-            className="hover:border-t-2 text-white hover:z-[10px] py-[10px] font-semibold"
+            className="hover:border-t-2 hover:no-underline text-white hover:z-[10px] py-[10px] font-semibold no-underline"
           >
             Alumni Chapters
           </Link>
-          <div className="flex items-center hover:border-t-2 py-[10px] justify-center gap-[5px] font-semibold">
+          <Link to="/" className="flex hover:no-underline text-white items-center hover:border-t-2 py-[10px] justify-center gap-[5px] font-semibold no-underline">
             Convocation
             <span className="flex px-[3px] py-[2px] text-[16px] animate-bounce bg-[#e03574] rounded-md">
               New
             </span>
-          </div>
+          </Link>
         </div>
       </div>
     </>

@@ -32,7 +32,7 @@ function Footer() {
             <h1 className="text-[32px] font-bold font-[Inter]">Useful Links</h1>
             <Link
               to="https://iiitbhopal.ac.in"
-              className="hover:text-[#0a6db7] text-white flex flex-row justify-center items-center"
+              className="hover:text-[#0a6db7] text-white flex flex-row justify-center items-center "
             >
               <AiOutlineRight />
               <span>IIIT Bhopal Website</span>
