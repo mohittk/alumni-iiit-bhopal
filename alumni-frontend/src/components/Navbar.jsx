@@ -60,37 +60,129 @@ function Navbar() {
           >
             Home
           </Link>
+          <div className="relative group m-[5px]">
+            <Link
+              className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold no-underline hover:no-underline" 
+            >
+              About Us
+            </Link>
+            <div className="hidden group-hover:block border-t-4 top-[38px] border-t-[#0a6db7] font-[Poppins] text-[21px] left-[-60px] absolute">
+              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow ">
+                <li className="p-[5px]">
+                  <Link to="/about" className=" hover:z-[10px] text-white py-[10px] no-underline">
+                    About the Institute
+                  </Link>
+                </li>
+                <li className="p-[5px]">
+                  <Link
+                    to="/message-from-director"
+                    className="hover:z-[10px] text-white py-[10px] no-underline"
+                  >
+                    Message From Director
+                  </Link>
+                </li>
+                <li className="p-[5px]">
+                  <Link to="/commitees" className=" hover:z-[10px] text-white py-[10px] no-underline">
+                    Committees
+                  </Link>
+                </li>
+                <li className="p-[5px]">
+                  <Link to="/contactus" className=" hover:z-[10px] text-white py-[10px] no-underline">
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="relative group m-[5px]">
+            <Link
+              to="/"
+              className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold no-underline hover:no-underline"
+            >
+              Alumni
+            </Link>
+            <div className="hidden group-hover:block border-t-4 top-[38px] border-t-[#0a6db7] font-[Poppins] text-[21px] left-[-60px] absolute">
+              <ul className=" z-[1000] w-[200px] text-white bg-[#2a004f] shadow ">
+                <li className="p-[5px]">
+                  <Link to="/alumni-profile" className=" hover:z-[10px] text-white py-[10px] no-underline">
+                    Alumni Profile
+                  </Link>
+                </li>
+                <li className="p-[5px]">
+                  <Link
+                    to="/alumni-directory"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                  >
+                    Alumni Directory
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="relative group m-[5px]">
+            <Link
+              to="/"
+              className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold no-underline hover:no-underline"
+            >
+              Events
+            </Link>
+            <div className="hidden group-hover:block border-t-4 top-[38px] border-t-[#0a6db7] font-[Poppins] text-[21px] left-[-60px] absolute">
+              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow ">
+                <li className="p-[5px]">
+                  <Link to="/alumni-meet" className=" hover:z-[10px] text-white py-[10px] no-underline">
+                    Alumni Meet
+                  </Link>
+                </li>
+                <li className="p-[5px]">
+                  <Link to="/mentorship" className=" hover:z-[10px] text-white no-underline">
+                    <div className="flex gap-[5px]">
+                      Mentorship Programs
+                      <span className="flex px-[3px] py-[2px] text-[16px] animate-bounce bg-[#e03574] rounded-md">
+                        New
+                      </span>
+                    </div>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="relative group ">
+            <Link
+              to="/"
+              className="hover:border-t-2 text-white hover:z-[10px] py-[10px] font-semibold no-underline hover:no-underline"
+            >
+              Donation/Give Back
+            </Link>
+            <div className="hidden group-hover:block border-t-4 top-[38px] border-t-[#0a6db7] font-[Poppins] text-[21px] left-[-60px] absolute">
+              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow ">
+                <li className="p-[5px]">
+                  <Link to="/donation-utility" className=" hover:z-[10px] text-white py-[10px] no-underline">
+                    Donation Utilization
+                  </Link>
+                </li>
+                <li className="p-[5px]">
+                  <Link
+                    to="/donation-gateway"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                  >
+                    Donate Now
+                  </Link>
+                </li>
+                <li className="p-[5px]">
+                  <Link to="/donation-wall" className=" hover:z-[10px] text-white py-[10px] no-underline">
+                    Donar Wall Recognization
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
           <Link
-            to="/about"
-            className="hover:border-t-2 hover:no-underline hover:z-[10px] text-white py-[10px] font-semibold no-underline"
-          >
-            About Us
-          </Link>
-          <Link
-            to="/"
-            className="hover:border-t-2 hover:no-underline hover:z-[10px] text-white py-[10px] font-semibold no-underline"
-          >
-            Alumni
-          </Link>
-          <Link
-            to="/"
-            className="hover:border-t-2 hover:no-underline hover:z-[10px] text-white py-[10px] font-semibold no-underline"
-          >
-            Events
-          </Link>
-          <Link
-            to="/"
-            className="hover:border-t-2 hover:no-underline text-white hover:z-[10px] py-[10px] font-semibold no-underline"
-          >
-            Donation/Give Back
-          </Link>
-          <Link
-            to="/"
+            to="/alumni-chapters"
             className="hover:border-t-2 hover:no-underline text-white hover:z-[10px] py-[10px] font-semibold no-underline"
           >
             Alumni Chapters
           </Link>
-          <Link to="/" className="flex hover:no-underline text-white items-center hover:border-t-2 py-[10px] justify-center gap-[5px] font-semibold no-underline">
+          <Link to="/convocation" className="flex hover:no-underline text-white items-center hover:border-t-2 py-[10px] justify-center gap-[5px] font-semibold no-underline">
             Convocation
             <span className="flex px-[3px] py-[2px] text-[16px] animate-bounce bg-[#e03574] rounded-md">
               New

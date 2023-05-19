@@ -33,7 +33,7 @@ export default function Router() {
           <Route exact path="/donation-utility" element={<DonationUtility />} />
           <Route exact path="/donation-gateway" element={<DonationGateway />} />
           <Route exact path="/donation-wall" element={<DonationWall />} />
-          <Route exact path="/alumni-chap" element={<AlumniChap />} />
+          <Route exact path="/alumni-chapters" element={<AlumniChap />} />
           <Route exact path="/convocation" element={<Convocation />} />
 
           
