@@ -19,7 +19,7 @@ function Footer() {
               height={200}
               alt="IIIT Bhopal Logo"
             />
-            <span className="flex flex-col gap-[2px] m-[10px] text-[22px] text-white font-[Poppins]">
+            <span className="flex flex-col gap-[2px] m-[10px] text-[22px] text-white font-opensans">
               Follow Us
               <span className="flex flex-row gap-[5px] text-[22px] justify-center items-center ">
                 <Link to="#" className="text-white">
@@ -28,7 +28,7 @@ function Footer() {
               </span>
             </span>
           </div>
-          <div className="flex flex-col gap-[10px] m-[5px] font-[Poppins] justify-center items-start text-[19px] text-white">
+          <div className="flex flex-col gap-[10px] m-[5px] font-opensans justify-center items-start text-[19px] text-white">
             <h1 className="text-[32px] font-bold font-[Inter]">Useful Links</h1>
             <Link
               to="https://iiitbhopal.ac.in"
@@ -73,7 +73,7 @@ function Footer() {
               <span>Library</span>
             </Link>
           </div>
-          <div className="flex flex-col gap-[10px] m-[5px] font-[Poppins] justify-center items-start text-[19px] text-white">
+          <div className="flex flex-col gap-[10px] m-[5px] font-opensans justify-center items-start text-[19px] text-white">
             <h1 className="text-[32px] font-bold font-[Inter]">Recent News</h1>
             <Link
               to="#"
@@ -104,7 +104,7 @@ function Footer() {
               </span>
             </Link>
           </div>
-          <div className="flex flex-col gap-[10px] m-[5px] font-[Poppins] justify-center items-start text-[19px] text-white">
+          <div className="flex flex-col gap-[10px] m-[5px] font-opensans justify-center items-start text-[19px] text-white">
             <h1 className="text-[32px] font-bold font-[Inter]">
               Contact Information
             </h1>

@@ -22,8 +22,12 @@ export default function Router() {
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/about" element={<About/>} />
-          <Route exact path="/message-from-director" element={<MsgDirector />} />
+          <Route exact path="/about" element={<About />} />
+          <Route
+            exact
+            path="/message-from-director"
+            element={<MsgDirector />}
+          />
           <Route exact path="/commitees" element={<Commitees />} />
           <Route exact path="/contactus" element={<ContactUs />} />
           <Route exact path="/alumni-profile" element={<AlumniProfile />} />
@@ -35,8 +39,6 @@ export default function Router() {
           <Route exact path="/donation-wall" element={<DonationWall />} />
           <Route exact path="/alumni-chapters" element={<AlumniChap />} />
           <Route exact path="/convocation" element={<Convocation />} />
-
-          
         </Routes>
       </BrowserRouter>
     </>

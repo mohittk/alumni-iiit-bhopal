@@ -1,6 +1,6 @@
 import Card from "../../components/Card";
-import QueryForm from '../../components/QueryForm'
-import Meetup from '../../components/Meetup'
+import QueryForm from "../../components/QueryForm";
+import Meetup from "../../components/Meetup";
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -14,8 +14,8 @@ import Footer from "../../components/Footer";
 export default function App() {
   return (
     <>
-      <Navbar/>
-      <Corousel/>
+      <Navbar />
+      <Corousel />
       <div className="p-[100px]">
         <Swiper
           slidesPerView={3}
