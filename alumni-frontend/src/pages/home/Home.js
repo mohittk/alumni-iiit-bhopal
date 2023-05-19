@@ -53,8 +53,6 @@ export default function App() {
 
       <QueryForm />
       <Footer />
-      <MsgDirector/>
-      <ContactUs/>
     </>
   );
 }
