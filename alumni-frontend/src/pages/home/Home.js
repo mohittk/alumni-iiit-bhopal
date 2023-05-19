@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper";
 import Navbar from "../../components/Navbar";
 import Corousel from "../../components/Corousel";
+import Footer from "../../components/Footer";
 
 export default function App() {
   return (
@@ -26,17 +27,30 @@ export default function App() {
           modules={[FreeMode, Pagination]}
           className="mySwiper"
         >
-          <SwiperSlide><Card/></SwiperSlide>
-          <SwiperSlide><Card/></SwiperSlide>
-          <SwiperSlide><Card/></SwiperSlide>
-          <SwiperSlide><Card/></SwiperSlide>
-          <SwiperSlide><Card/></SwiperSlide>
-          <SwiperSlide><Card/></SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Card />
+          </SwiperSlide>
         </Swiper>
       </div>
-      <Meetup/>
+      <Meetup />
 
-      <QueryForm/>
+      <QueryForm />
+      <Footer />
     </>
   );
 }

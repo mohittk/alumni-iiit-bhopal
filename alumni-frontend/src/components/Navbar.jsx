@@ -18,17 +18,17 @@ function Navbar() {
               "Once an alumnus, forever a part of our legacy."
             </span>
           </div>
-          <div className="flex flex-row gap-[15px] text-[28px] text-[#eded04]">
-            <Link to="#">
+          <div className="flex flex-row gap-[15px] text-[28px]">
+            <Link to="#" className="text-[#eded04]">
               <FaFacebookSquare />
             </Link>
-            <Link to="#">
+            <Link to="#" className="text-[#eded04]">
               <BsTwitter />
             </Link>
-            <Link to="#">
+            <Link to="#" className="text-[#eded04]">
               <RiLinkedinFill />
             </Link>
-            <Link to="#">
+            <Link to="#" className="text-[#eded04]">
               <AiFillInstagram />
             </Link>
           </div>
@@ -54,22 +54,40 @@ function Navbar() {
           </span>
         </div>
         <div className="flex gap-[10px] text-[21px] font-[sans-serif] font-normal text-white bg-[#2a004f] justify-evenly items-center z-[10] px-[15px] h-[78px] w-full">
-          <Link to="/" className="hover:border-t-2 hover:z-[10px] py-[10px] font-semibold">
+          <Link
+            to="/"
+            className="hover:border-t-2 hover:z-[10px] py-[10px] text-white font-semibold"
+          >
             Home
           </Link>
-          <Link to="/about" className="hover:border-t-2 hover:z-[10px] py-[10px] font-semibold">
+          <Link
+            to="/about"
+            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+          >
             About Us
           </Link>
-          <Link to="/" className="hover:border-t-2 hover:z-[10px] py-[10px] font-semibold">
+          <Link
+            to="/"
+            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+          >
             Alumni
           </Link>
-          <Link to="/" className="hover:border-t-2 hover:z-[10px] py-[10px] font-semibold">
+          <Link
+            to="/"
+            className="hover:border-t-2 hover:z-[10px] text-white py-[10px] font-semibold"
+          >
             Events
           </Link>
-          <Link to="/" className="hover:border-t-2 hover:z-[10px] py-[10px] font-semibold">
+          <Link
+            to="/"
+            className="hover:border-t-2 text-white hover:z-[10px] py-[10px] font-semibold"
+          >
             Donation/Give Back
           </Link>
-          <Link to="/" className="hover:border-t-2 hover:z-[10px] py-[10px] font-semibold">
+          <Link
+            to="/"
+            className="hover:border-t-2 text-white hover:z-[10px] py-[10px] font-semibold"
+          >
             Alumni Chapters
           </Link>
           <div className="flex items-center hover:border-t-2 py-[10px] justify-center gap-[5px] font-semibold">
