@@ -1,7 +1,8 @@
 import React, { useState }  from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+
+const pathPic ='Images/contact2.png'
 const borderField = {
   border: "1px solid black",
   width: "253px",
@@ -74,29 +75,10 @@ export default function ContactUs() {
       <div style={{backgroundColor: 'whitesmoke', padding: '100px'}}>
       <div class="container">
           <div class="row">
-            <div class="col-1"></div>
-            <div class="col-5">
-            <div style={{width: '90%', height: '100%', backgroundColor: '#000000'}}>
-              <div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-sm">
-                    <LocationOnIcon style={{color: '#107CAF'}}/>
-                  </div>
-                  <div class="col-sm">
-                    <h1>Address:</h1>
-                    <h1>Office of Alumni Affairs</h1>
-                    <h1>Admin Extension-1,</h1>
-                    <h1>IIIT Bhopal, MP</h1>
-                  </div>
-                </div>
-              </div>
-              </div><hr/>
-              <div></div><hr/>
-              <div></div>
+            <div class="col-sm">
+              <img src={pathPic} width='450px' style={{borderRadius: '7%', border: '1px dotted grey'}}/>
             </div>
-            </div>
-            <div class="col-6">
+            <div class="col-sm">
               <div class="bg-img">
                 <form action="/" class="container" onSubmit={submitEvent}>
                   <div>
