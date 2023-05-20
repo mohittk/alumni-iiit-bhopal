@@ -50,7 +50,6 @@ export default function App() {
         </Swiper>
       </div>
       <Meetup />
-
       <QueryForm />
       <Footer />
     </>
