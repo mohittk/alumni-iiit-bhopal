@@ -2,11 +2,35 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import alumnichap from "../../assets/alumni-chap.jpg"
+import { useState, useEffect } from "react";
+import { ThreeCircles } from "react-loader-spinner";
 
 export default function AlumniChap() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, []);
   return (
     <>
-      <Navbar />
+     {isLoading ?  <>
+        <div className="h-screen flex items-center justify-center">
+        <ThreeCircles
+          height="200"
+          width="200"
+          color="#2a004f"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+          ariaLabel="three-circles-rotating"
+          outerCircleColor=""
+          innerCircleColor=""
+          middleCircleColor=""
+        /></div>
+        </> : <>
+        <Navbar />
       <div class="msgDirectorBanner">
         <img
           src={alumnichap}
@@ -22,8 +46,8 @@ export default function AlumniChap() {
           Coming Soon.....
         </h2>
       </div>
-      
-      <Footer />
+      <Footer /></>}
+    
     </>
   );
 }

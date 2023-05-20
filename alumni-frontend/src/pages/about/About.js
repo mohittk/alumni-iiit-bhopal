@@ -4,11 +4,36 @@ import Footer from "../../components/Footer";
 import fullimg3 from "../../assets/iiitb-upper3.jpg";
 import fullimg4 from "../../assets/iiitb-upper4.jpg";
 import fullimg5 from "../../assets/iiitb-upper5.jpg";
+import { useState, useEffect } from "react";
+import { ThreeCircles } from "react-loader-spinner";
 
 export default function About() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, []);
+
   return (
     <>
-      <Navbar />
+    {isLoading ?  <>
+        <div className="h-screen flex items-center justify-center">
+        <ThreeCircles
+          height="200"
+          width="200"
+          color="#2a004f"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+          ariaLabel="three-circles-rotating"
+          outerCircleColor=""
+          innerCircleColor=""
+          middleCircleColor=""
+        /></div>
+        </> : <>
+        <Navbar />
       <div class="msgDirectorBanner">
         <img
           src="https://images.shiksha.com/mediadata/images/1550718239phpVMfSEn.jpeg"
@@ -58,7 +83,8 @@ export default function About() {
           </h3>
         </div>
       </div>
-      <Footer />
+      <Footer /></>}
+    
     </>
   );
 }

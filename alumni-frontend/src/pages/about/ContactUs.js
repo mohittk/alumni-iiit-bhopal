@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
+import { useState, useEffect } from "react";
+import { ThreeCircles } from "react-loader-spinner";
 
 const pathPic = "Images/contact2.png";
 const borderField = {
@@ -9,6 +11,14 @@ const borderField = {
   height: "40px",
 };
 export default function ContactUs() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+  }, []);
+
   const [details, setDetails] = useState({
     name: "",
     email: "",
@@ -62,7 +72,21 @@ export default function ContactUs() {
   };
   return (
     <>
-      <div>
+     {isLoading ?  <>
+        <div className="h-screen flex items-center justify-center">
+        <ThreeCircles
+          height="200"
+          width="200"
+          color="#2a004f"
+          wrapperStyle={{}}
+          wrapperClass=""
+          visible={true}
+          ariaLabel="three-circles-rotating"
+          outerCircleColor=""
+          innerCircleColor=""
+          middleCircleColor=""
+        /></div>
+        </> : <>
         <Navbar />
         <div class="msgDirectorBanner">
           <img
@@ -154,8 +178,10 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-        <Footer />
-      </div>
+        <Footer /></>}
+      
+      
+      
     </>
   );
 }
