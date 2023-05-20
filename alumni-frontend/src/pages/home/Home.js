@@ -10,6 +10,8 @@ import { FreeMode, Pagination } from "swiper";
 import Navbar from "../../components/Navbar";
 import Corousel from "../../components/Corousel";
 import Footer from "../../components/Footer";
+import MsgDirector from "../about/MsgDirector";
+import ContactUs from "../about/ContactUs";
 
 export default function App() {
   return (

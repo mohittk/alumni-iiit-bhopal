@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-// import '../styles/style.css';
+
 const borderField = {
   border: "1px solid black",
   width: "253px",
   height: "40px",
 };
+
 const QueryForm = () => {
   const [details, setDetails] = useState({
     name: "",
