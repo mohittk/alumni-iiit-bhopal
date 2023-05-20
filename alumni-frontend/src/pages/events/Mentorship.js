@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import mentorPoster from "../../assets/mentor-poster.jpg"
 
-export default function About() {
+export default function Mentorship() {
   return (
     <>
       <Navbar />
