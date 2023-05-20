@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import mentorPoster from "../../assets/mentor-poster.jpg"
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
+import Card from "../../components/Card";;
 
 export default function Mentorship() {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,7 +47,19 @@ export default function Mentorship() {
           IIIT Bhopal Alumni - Student Mentorship Programs
         </h2>
       </div>
-      
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <Card/>
+          </div>
+          <div class="col-sm">
+            <Card/>
+          </div>
+          <div class="col-sm">
+            <Card/>
+          </div>
+        </div>
+      </div><br/><br/><br/>
       <Footer /></>}
      
     </>
