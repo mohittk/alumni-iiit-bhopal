@@ -27,25 +27,24 @@ export default function App() {
     <>
       {isLoading ? (
         <>
-        <div className="h-screen flex items-center justify-center">
-        <h2 className="font-opensans font-bold m-3 p-4">Welcome to IIIT Bhopal's Alumni Website</h2>
-        <ThreeCircles
-          height="200"
-          width="200"
-          color="#2a004f"
-          wrapperStyle={{}}
-          wrapperClass=""
-          visible={true}
-          ariaLabel="three-circles-rotating"
-          outerCircleColor=""
-          innerCircleColor=""
-          middleCircleColor=""
-        /></div>
+          <div className="h-screen flex items-center justify-center">
+            <h2 className="font-opensans font-bold m-3 p-4">
+              Welcome to IIIT Bhopal's Alumni Website
+            </h2>
+            <ThreeCircles
+              height="200"
+              width="200"
+              color="#2a004f"
+              wrapperStyle={{}}
+              wrapperClass=""
+              visible={true}
+              ariaLabel="three-circles-rotating"
+              outerCircleColor=""
+              innerCircleColor=""
+              middleCircleColor=""
+            />
+          </div>
         </>
-       
-      
-    
-       
       ) : (
         <>
           <Navbar />
@@ -82,7 +81,6 @@ export default function App() {
             </Swiper>
           </div>
           <Meetup />
-
           <QueryForm />
           <Footer />
         </>
