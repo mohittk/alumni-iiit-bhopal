@@ -35,12 +35,14 @@ function Navbar() {
         </div>
         <div className="flex flex-row justify-between px-[60px] py-[5px] w-full items-center">
           <span className="w-[50%] flex items-center justify-center">
-            <img src={image} alt="logo-iiitb"/>
+            <img src={image} alt="logo-iiitb" />
           </span>
           <span className="flex w-[50%] gap-[15px]  items-center justify-center">
             <ImLocation className="text-[60px] text-[#0a6db7]" />
             <span className="flex flex-col w-[90%]">
-              <h1 className="text-[25px] font-bold font-opensans">IIIT Bhopal</h1>
+              <h1 className="text-[25px] font-bold font-opensans">
+                IIIT Bhopal
+              </h1>
               <h1 className="text-[20px] text-[#6331c0] font-semibold font-opensans">
                 C/O Maulana Azad National Institute of Technology (MANIT),
                 Bhopal<br></br>Room No TC-105, New Teaching Block, MANIT,

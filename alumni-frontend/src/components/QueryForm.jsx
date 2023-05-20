@@ -63,7 +63,9 @@ const QueryForm = () => {
     <>
       <div class="main-bg">
         <hr />
-        <h1 className="text-center text-[#107CAF] font-bold font-opensans">Get In Touch</h1>
+        <h1 className="text-center text-[#107CAF] font-bold font-opensans">
+          Get In Touch
+        </h1>
         <p className="text-center text-xl font-opensans">
           If you have any query kindly feel free to contact us!
         </p>
@@ -139,7 +141,7 @@ const QueryForm = () => {
                     <button
                       type="button"
                       class="btn btn-primary"
-                      style={{ marginTop: "8px" , fontFamily: "Open Sans" }}
+                      style={{ marginTop: "8px", fontFamily: "Open Sans" }}
                     >
                       Submit
                     </button>

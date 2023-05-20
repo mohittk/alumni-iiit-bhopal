@@ -1,5 +1,5 @@
 import React from "react";
-import convo1 from "../assets/convo-poster.jpeg"
+import convo1 from "../assets/convo-poster.jpeg";
 
 const Corousel = () => {
   return (

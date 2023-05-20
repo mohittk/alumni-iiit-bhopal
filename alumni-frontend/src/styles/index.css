@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Calistoga&family=Luckiest+Guy&family=Open+Sans:wght@500&family=Poppins&family=Roboto+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Calistoga&family=Luckiest+Guy&family=Open+Sans:wght@500&family=Poppins&family=Roboto+Mono&display=swap");
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -34,12 +34,12 @@ code {
 }
 
 /* MsgDirector */
-.msgDirectorBanner{
+.msgDirectorBanner {
   position: relative;
   text-align: center;
   color: white;
 }
-.centerMsgDirector{
+.centerMsgDirector {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -47,7 +47,7 @@ code {
   font-weight: 800;
   font-size: 60px;
 }
-.directorInfo{
+.directorInfo {
   background-color: whitesmoke;
 }
 /**/
