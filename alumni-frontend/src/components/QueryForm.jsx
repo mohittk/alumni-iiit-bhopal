@@ -64,7 +64,7 @@ const QueryForm = () => {
       <div class="main-bg">
         <hr />
         <h1 className="text-center text-[#107CAF] font-bold font-opensans">Get In Touch</h1>
-        <p className="text-center">
+        <p className="text-center text-xl font-opensans">
           If you have any query kindly feel free to contact us!
         </p>
         <hr />
@@ -79,6 +79,7 @@ const QueryForm = () => {
                 src="https://www.blogtyrant.com/wp-content/uploads/2011/02/best-about-us-pages.png"
                 alt="contact us"
                 width="636px"
+                className="rounded-lg"
               ></img>
             </div>
             <div class="col-sm">
@@ -87,29 +88,29 @@ const QueryForm = () => {
                   <div>
                     <input
                       type="text"
-                      placeholder="  Name"
+                      placeholder="Name"
                       onChange={inputEvent}
                       value={details.name}
                       name="fullname"
                       required
                       style={{ ...borderField, marginRight: "25px" }}
-                      className="rounded-lg p-[10px]"
+                      className="rounded-lg p-[10px] text-lg font-opensans"
                     />
                     <input
                       type="email"
-                      placeholder="  Email"
+                      placeholder="Email"
                       onChange={inputEvent}
                       value={details.email}
                       name="emailid"
                       required
                       style={borderField}
-                      className="rounded-lg p-[10px]"
+                      className="rounded-lg p-[10px] text-lg font-opensans"
                     />
                   </div>
                   <div style={{ marginTop: "10px", marginBottom: "10px" }}>
                     <input
                       type="text"
-                      placeholder="  Phone Number"
+                      placeholder="Phone Number"
                       onChange={inputEvent}
                       value={details.pno}
                       name="phoneno"
@@ -119,26 +120,26 @@ const QueryForm = () => {
                         width: "533px",
                         height: "40px",
                       }}
-                      className="rounded-lg p-[10px]"
+                      className="rounded-lg p-[10px] text-lg font-opensans"
                     />
                   </div>
                   <div>
                     <textarea
-                      placeholder="  Message"
+                      placeholder="Message"
                       rows="6"
                       cols="67"
                       onChange={inputEvent}
                       value={details.msg}
                       name="message"
                       style={{ border: "1px solid black" }}
-                      className="rounded-lg p-[10px]"
+                      className="rounded-lg p-[10px] text-lg font-opensans"
                     ></textarea>
                   </div>
                   <div>
                     <button
                       type="button"
                       class="btn btn-primary"
-                      style={{ marginTop: "8px" }}
+                      style={{ marginTop: "8px" , fontFamily: "Open Sans" }}
                     >
                       Submit
                     </button>

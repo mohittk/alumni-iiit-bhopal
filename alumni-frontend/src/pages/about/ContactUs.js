@@ -68,7 +68,7 @@ export default function ContactUs() {
             src="https://images.shiksha.com/mediadata/images/1550718239phpVMfSEn.jpeg"
             style={{ filter: "blur(3px)", width: "100%" }}
           />
-          <div class="centerMsgDirector">Contact Us</div>
+          <div class="centerMsgDirector font-opensans p-4 bg-[#2a004f]">Contact Us</div>
       </div>
       <br />
       <br />
@@ -76,7 +76,7 @@ export default function ContactUs() {
       <div class="container">
           <div class="row">
             <div class="col-sm">
-              <img src={pathPic} width='450px' style={{borderRadius: '7%', border: '1px dotted grey'}}/>
+              <img src={pathPic} width='450px' style={{borderRadius: '7%'}} className="box1"/>
             </div>
             <div class="col-sm">
               <div class="bg-img">

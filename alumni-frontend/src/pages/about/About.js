@@ -1,17 +1,27 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import fullimg from "../../assets/iiitb-upper.jpeg";
-import fullimg2 from "../../assets/iiitb-upper2.jpeg";
+import fullimg3 from "../../assets/iiitb-upper3.jpg";
+import fullimg4 from "../../assets/iiitb-upper4.jpg";
+import fullimg5 from "../../assets/iiitb-upper5.jpg";
 
 export default function About() {
   return (
     <>
       <Navbar />
+      <div class="msgDirectorBanner">
+          <img
+            src="https://images.shiksha.com/mediadata/images/1550718239phpVMfSEn.jpeg"
+            style={{ filter: "blur(3px)", width: "100%" }}
+          />
+          <div class="centerMsgDirector font-opensans p-4 bg-[#2a004f] ">About The Institute</div>
+        </div>
       <div className="m-4 p-4 about-us-section flex flex-col justify-center items-center font-opensans">
-        <div className="grid justify-center grid-cols-2 gap-2">
-        <img className="p-5" src={fullimg} />
-        <img className="p-5" src={fullimg2} />
+        <div className="grid justify-center grid-cols-3 gap-3">
+        <img className="rounded-lg" src={fullimg3} width={600} height={120}/>
+        <img className="rounded-lg" src={fullimg4} width={600} height={120}/>
+        <img className="rounded-lg" src={fullimg5} width={600} height={120}/>
+        
         </div>
         <div className="">
         <h3 className="m-10 p-10 text-[1.5rem] font-semibold">
