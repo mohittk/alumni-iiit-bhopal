@@ -137,8 +137,8 @@ function Footer() {
           </div>
         </div>
         <div className="flex px-[100px] py-[20px] justify-center items-center text-white font-[Inter]">
-          © IIIT Bhopal | Designed and Developed by: ERP&A, Office of Dean (IIIT
-          Bhopal)
+          © IIIT Bhopal | Designed and Developed by: Mohit Khairnar, Aman Gupta
+          and Manjeet Pathak (IIIT Bhopal students)
         </div>
       </div>
     </>
