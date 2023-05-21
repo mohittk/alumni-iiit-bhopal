@@ -4,15 +4,18 @@ import Footer from "../../components/Footer";
 import mentorPoster from "../../assets/mentor-poster.jpg";
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
+import { get_all_profiles, get_profiles_by_year } from "../../controllers/StudentRoutes";
+import Table from "../../components/Table";
+import { AiTwotoneMobile } from "react-icons/ai";
 
 export default function AlumniDirectory() {
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
   }, []);
+
   return (
     <>
       {isLoading ? (
@@ -35,15 +38,20 @@ export default function AlumniDirectory() {
       ) : (
         <>
           <Navbar />
-          <div class="msgDirectorBanner">
+          <div className="msgDirectorBanner">
             <img
               src={mentorPoster}
               style={{ filter: "blur(3px)", width: "100%" }}
             />
-            <div class="centerMsgDirector font-opensans p-4 bg-[#2a004f] ">
+            <div className="centerMsgDirector font-opensans p-4 bg-[#2a004f] ">
               Alumni Directory
             </div>
           </div>
+
+        
+
+          <Table />
+
 
           <Footer />
         </>
