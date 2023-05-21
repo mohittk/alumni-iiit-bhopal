@@ -57,7 +57,7 @@ export default function Mentorship() {
                 <SessionCard name="Resume Review Session" presenter="Shubankar Sharma"/>
               </div>
               <div class="col-sm">
-                <SessionCard name="Guidance on cracking top companies" presenter="Pankaj Sharma"/>
+                <SessionCard name="Guidance on cracking Top companies" presenter="Pankaj Sharma"/>
               </div>
               <div class="col-sm">
                 <SessionCard name="Placement in Core Electronics" presenter="Ashutosh Singh Parmar"/>
