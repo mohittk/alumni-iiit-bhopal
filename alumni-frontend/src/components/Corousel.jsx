@@ -21,7 +21,7 @@ const Corousel = () => {
         </ol>
         <div class="carousel-inner rounded-xl">
           <div class="carousel-item active">
-            <img class="d-block w-100" src={convo1} alt="First slide" />
+            <img class="d-block" src={convo1} alt="First slide"  width='80%' style={{margin: 'auto'}} height='10px'/>
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src={convo1} alt="Second slide" />

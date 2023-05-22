@@ -22,9 +22,11 @@ export default function DonationUtility() {
       <br />
 
       <div className="p-[100px] font-opensans">
+        <div style={{borderBottom: '2px solid grey', borderTop: '2px solid grey', padding: '15px 0 15px 0'}}>
         <h2 className="text-center font-semibold">
           Why IIIT-B needs your support?
         </h2>
+        </div><br/>
         <br />
         <div className="text-lg">
           <p>
@@ -82,7 +84,7 @@ export default function DonationUtility() {
           className="text-[#234144] text-center font-bold mb-[60px] font-opensans"
           style={{
             backgroundColor: "#F1F0C5",
-            borderRadius: "50%",
+            borderRadius: "22px",
             padding: "15px",
           }}
         >

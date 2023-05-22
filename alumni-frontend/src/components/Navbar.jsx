@@ -7,18 +7,19 @@ import { RiLinkedinFill } from "react-icons/ri";
 import { ImLocation } from "react-icons/im";
 import image from "../assets/iiitb-full.png";
 import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
 function Navbar() {
   return (
     <>
       <div className="flex flex-col">
         <div className="flex bg-[#303038] justify-between w-[100%] px-[150px] py-[10px] items-center">
-          <div className="flex gap-[5px] text-[28px] text-white justify-center items-center">
+          <div className="flex gap-[4px] text-[28px] text-white justify-center items-center">
             <FaHandshake />
-            <span className="text-[22px] font-opensans">
+            <span className="text-[20px] font-opensans">
               "Once an alumnus, forever a part of our legacy."
             </span>
           </div>
-          <div className="flex flex-row gap-[15px] text-[28px]">
+          <div className="flex flex-row gap-[15px] text-[25px]">
             <Link to="#" className="text-[#eded04]">
               <FaFacebookSquare />
             </Link>
@@ -33,30 +34,14 @@ function Navbar() {
             </Link>
           </div>
         </div>
-        <div className="flex flex-row justify-between px-[60px] py-[5px] w-full items-center">
-          <h1 className="font-opensans text-[4rem] text-[#2a004f] font-bold w-[40%]"> Alumni IIIT Bhopal</h1>
-          <span className="w-[50%] flex items-center justify-center">
-            <img src={image} alt="logo-iiitb" />
+        <div className="flex flex-row items-center w-full">
+          <h3 className="font-opensans text-[2.2rem] text-[#2a004f] font-bold w-[30%] pl-[3%]" style={{fontFamily: "'Playfair Display', serif", textShadow: '4px 3px #F1EDC7'}}> Alumni IIIT Bhopal</h3>
+          <span className="w-[50%] flex items-center justify-center mr-[4%]">
+            <img src={image} alt="logo-iiitb" width='9000px'/>
           </span>
-          <span className="flex w-[50%] gap-[15px]  items-center justify-center">
-            <ImLocation className="text-[60px] text-[#0a6db7]" />
-            <span className="flex flex-col w-[90%]">
-              <h1 className="text-[25px] font-bold font-opensans">
-                IIIT Bhopal
-              </h1>
-              <h1 className="text-[20px] text-[#6331c0] font-semibold font-opensans">
-                C/O Maulana Azad National Institute of Technology (MANIT),
-                Bhopal<br></br>Room No TC-105, New Teaching Block, MANIT,
-                Bhopal, MP, India
-              </h1>
-              <h1 className="text-[20px] text-[#6734c5] font-semibold font-opensans">
-                Pin code : 462003 Phone : 0755-4051950 Email:
-                info@iiitbhopal.ac.in
-              </h1>
-            </span>
-          </span>
+          <Button variant="contained">LOGIN / SIGNUP</Button>
         </div>
-        <div className="flex gap-[10px] text-[21px] font-opensans text-white bg-[#2a004f] justify-evenly items-center z-[10] px-[15px] h-[78px] w-full">
+        <div className="flex gap-[10px] text-[17px] font-opensans text-white bg-[#2a004f] justify-evenly items-center z-[10] px-[15px] h-[50px] w-full">
           <Link
             to="/"
             className="hover:border-t-2 hover:no-underline hover:z-[10px] py-[10px] text-white font-semibold no-underline"
@@ -68,35 +53,35 @@ function Navbar() {
               About Us
             </Link>
             <div className="hidden group-hover:block border-t-4 top-[38px] border-t-[#0a6db7] text-[21px] left-[-60px] absolute">
-              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow ">
-                <li className="p-[5px]">
+              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow py-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/about"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     About the Institute
                   </Link>
                 </li>
-                <li className="p-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/message-from-director"
-                    className="hover:z-[10px] text-white py-[10px] no-underline"
+                    className="hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Message From Director
                   </Link>
                 </li>
-                <li className="p-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/commitees"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Committees
                   </Link>
                 </li>
-                <li className="p-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/contactus"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Contact Us
                   </Link>
@@ -112,19 +97,19 @@ function Navbar() {
               Alumni
             </Link>
             <div className="hidden group-hover:block border-t-4 top-[38px] border-t-[#0a6db7]  text-[21px] left-[-60px] absolute">
-              <ul className=" z-[1000] w-[200px] text-white bg-[#2a004f] shadow ">
-                <li className="p-[5px]">
+              <ul className=" z-[1000] w-[200px] text-white bg-[#2a004f] shadow py-[5px] pl-[17px]">
+                <li className="p-[4px]">
                   <Link
                     to="/alumni-profile"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Alumni Profile
                   </Link>
                 </li>
-                <li className="p-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/alumni-directory"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Alumni Directory
                   </Link>
@@ -140,21 +125,21 @@ function Navbar() {
               Events
             </Link>
             <div className="hidden group-hover:block border-t-4 top-[38px] border-t-[#0a6db7]  text-[21px] left-[-60px] absolute">
-              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow ">
-                <li className="p-[5px]">
+              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow py-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/alumni-meet"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Alumni Meet
                   </Link>
                 </li>
-                <li className="p-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/mentorship"
-                    className=" hover:z-[10px] text-white no-underline"
+                    className=" hover:z-[10px] text-white no-underline text-[19px]"
                   >
-                    <div className="flex gap-[5px]">
+                    <div className="flex gap-[13px]">
                       Mentorship Programs
                       <span className="flex px-[3px] py-[2px] text-[16px] animate-bounce bg-[#e03574] rounded-md">
                         New
@@ -173,27 +158,27 @@ function Navbar() {
               Donation/Give Back
             </Link>
             <div className="hidden group-hover:block border-t-4 top-[38px] border-t-[#0a6db7] text-[21px] left-[-60px] absolute">
-              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow ">
-                <li className="p-[5px]">
+              <ul className=" z-[1000]  w-[300px] text-white bg-[#2a004f] shadow py-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/donation-utility"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Donation Utilization
                   </Link>
                 </li>
-                <li className="p-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/donation-gateway"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Donate Now
                   </Link>
                 </li>
-                <li className="p-[5px]">
+                <li className="p-[4px]">
                   <Link
                     to="/donation-wall"
-                    className=" hover:z-[10px] text-white py-[10px] no-underline"
+                    className=" hover:z-[10px] text-white py-[10px] no-underline text-[19px]"
                   >
                     Donar Wall Recognization
                   </Link>
@@ -209,7 +194,7 @@ function Navbar() {
           </Link>
           <Link
             to="/convocation"
-            className="flex hover:no-underline text-white items-center hover:border-t-2 py-[10px] justify-center gap-[5px] font-semibold no-underline"
+            className="flex hover:no-underline text-white items-center hover:border-t-2 py-[10px] justify-center gap-[4px] font-semibold no-underline"
           >
             Convocation
             <span className="flex px-[3px] py-[2px] text-[16px] animate-bounce bg-[#e03574] rounded-md">

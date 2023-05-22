@@ -61,7 +61,7 @@ const QueryForm = () => {
 
   return (
     <>
-      <div class="main-bg">
+      <div class="main-bg" style={{backgroundColor:'whitesmoke'}}>
         <hr />
         <h1 className="text-center text-[#2a004f] font-bold font-opensans">
           Get In Touch
@@ -81,7 +81,7 @@ const QueryForm = () => {
                 src="https://www.blogtyrant.com/wp-content/uploads/2011/02/best-about-us-pages.png"
                 alt="contact us"
                 width="636px"
-                className="rounded-lg"
+                className="rounded-lg" style={{boxShadow: '1px 2px #4D4B39'}}
               ></img>
             </div>
             <div class="col-sm">

@@ -69,8 +69,13 @@ export default function About() {
               />
             </div>
             <div className="">
-              <h3 className="m-10 p-10 text-[1.5rem] font-semibold">
-                INDIAN INSTITUTE OF INFORMATION TECHNOLOGY BHOPAL (IIIT-Bhopal),
+              <h3 className="m-10 p-10 text-[1.3rem]" style={{
+                      marginTop: "30px",
+                      lineHeight: "1.8",
+                      fontFamily: "Open Sans",
+                      fontSize: "1.2rem",
+                    }}>
+                <span className="text-[1.3rem] font-semibold">INDIAN INSTITUTE OF INFORMATION TECHNOLOGY BHOPAL (IIITB) </span>
                 is one of the Indian Institutes of Information Technology (PPP)
                 of National Importance in the country, set up with the objective
                 of making available facilities for higher education, research
@@ -85,8 +90,7 @@ export default function About() {
                 industry.
                 <br></br>
                 <br></br>
-                On the same line INDIAN INSTITUTE OF INFORMATION TECHNOLOGY
-                BHOPAL (IIIT-Bhopal) is newly established Educational Institute
+                On the same line IIIT-Bhopal is newly established Educational Institute
                 by the Ministry of Education, Government of India and few
                 industry partners as Not-for-profit Public Private Partnership
                 (N-PPP) Institution. The industry Partner of IIIT Bhopal is,

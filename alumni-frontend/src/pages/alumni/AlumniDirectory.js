@@ -46,7 +46,7 @@ export default function AlumniDirectory() {
             <div className="centerMsgDirector font-opensans p-4 bg-[#2a004f] ">
               Alumni Directory
             </div>
-          </div>
+          </div><br/><br/>
 
         
 

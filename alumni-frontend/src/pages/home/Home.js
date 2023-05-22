@@ -50,6 +50,9 @@ export default function App() {
           <Navbar />
           <Corousel />
           <div className="p-[100px]">
+            <h1 className="text-center text-[#2a004f] font-bold font-opensans">
+            Our Recent Alumni (2022)
+          </h1><br/>
             <Swiper
               slidesPerView={3}
               spaceBetween={30}
@@ -80,7 +83,7 @@ export default function App() {
               </SwiperSlide>
             </Swiper>
           </div>
-          <Meetup />
+          <Meetup /><br/><br/>
           <QueryForm />
           <Footer />
         </>
