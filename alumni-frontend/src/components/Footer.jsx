@@ -10,7 +10,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Footer() {
   return (
-    <div className="flex flex-col bg-[#181616] w-[full]">
+    <div className="flex flex-col bg-[#181616] w-[full] gap-[10px] py-[15px]">
       <div className="flex flex-row bg-[url(https://alumni.iiita.ac.in/wp-content/themes/xzopro/xzopro/assets/images/footer-bg.png)] justify-evenly gap-[15px] items-start">
         <div className="flex flex-col m-[5px] gap-[10px] justify-start items-center">
           <LazyLoadImage
