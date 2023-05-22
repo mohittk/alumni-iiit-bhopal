@@ -4,6 +4,7 @@ import "../../styles/index.css";
 import Footer from "../../components/Footer";
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function MsgDirector() {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,7 +38,7 @@ export default function MsgDirector() {
         <>
           <Navbar />
           <div class="msgDirectorBanner">
-            <img
+            <LazyLoadImage
               src="https://images.shiksha.com/mediadata/images/1550718239phpVMfSEn.jpeg"
               style={{ filter: "blur(3px)", width: "100%" }}
             />
@@ -92,7 +93,7 @@ export default function MsgDirector() {
                   </div>
                 </div>
                 <div class="col-sm" style={{ borderRadius: "12%" }}>
-                  <img
+                  <LazyLoadImage
                     src="https://iiitbhopal.ac.in/Document/Director/Director1.png?12:51:01.6921757"
                     width="500px"
                     style={{ borderRadius: "10%" }}

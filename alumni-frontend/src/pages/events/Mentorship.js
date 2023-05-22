@@ -6,11 +6,11 @@ import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
 import SessionCard from "../../components/SessionCard";
 import { get_all_programs } from "../../controllers/StudentRoutes";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Mentorship() {
   const [isLoading, setIsLoading] = useState(true);
   const [programs, setPrograms] = useState([]);
-
 
   useEffect(() => {
     setTimeout(() => {
@@ -22,7 +22,7 @@ export default function Mentorship() {
     get_all_programs().then((data) => {
       console.log(data.Message);
       setPrograms(data.Message);
-    })
+    });
   }, []);
   return (
     <>
@@ -47,7 +47,7 @@ export default function Mentorship() {
         <>
           <Navbar />
           <div class="msgDirectorBanner">
-            <img
+            <LazyLoadImage
               src={mentorPoster}
               style={{ filter: "blur(3px)", width: "100%" }}
             />
@@ -61,22 +61,35 @@ export default function Mentorship() {
               IIIT Bhopal Alumni - Student Mentorship Programs
             </h2>
             <p className="font-opensans font-semibold text-[1.5rem] m-2">
-Mentorship programs led by alumni of the college offer a unique and invaluable opportunity for current students to receive guidance from individuals who have walked the same path. Alumni mentors bring a wealth of experience and insights specific to the college's culture, academic programs, and career paths. By participating in these mentorship programs, students can gain valuable advice, industry connections, and real-world perspectives that can greatly enhance their educational journey and future career prospects. The alumni mentors' dedication to giving back to their alma mater creates a strong sense of community and fosters a lifelong bond between current students and successful graduates.</p>
+              Mentorship programs led by alumni of the college offer a unique
+              and invaluable opportunity for current students to receive
+              guidance from individuals who have walked the same path. Alumni
+              mentors bring a wealth of experience and insights specific to the
+              college's culture, academic programs, and career paths. By
+              participating in these mentorship programs, students can gain
+              valuable advice, industry connections, and real-world perspectives
+              that can greatly enhance their educational journey and future
+              career prospects. The alumni mentors' dedication to giving back to
+              their alma mater creates a strong sense of community and fosters a
+              lifelong bond between current students and successful graduates.
+            </p>
           </div>
           <div className="flex flex-row justify-center">
-          {programs ?  programs.map((program) => (
-            <>
-            <div className="m-3">
-            <SessionCard name={program.program_name} presenter={program.mentor_name} img={program.imgUrl}/>
-            </div>
-         
-            </>
-          ))
-          
-          : ('No Mentorship Programs Conducted yet')}
+            {programs
+              ? programs.map((program) => (
+                  <>
+                    <div className="m-3">
+                      <SessionCard
+                        name={program.program_name}
+                        presenter={program.mentor_name}
+                        img={program.imgUrl}
+                      />
+                    </div>
+                  </>
+                ))
+              : "No Mentorship Programs Conducted yet"}
           </div>
-         
-         
+
           <br />
           <br />
           <br />

@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const pic =
   "https://static.vecteezy.com/system/resources/previews/003/193/632/original/abstract-organic-square-shapes-random-hand-drawn-shapes-collage-free-free-vector.jpg";
 
@@ -20,117 +21,292 @@ const Meetup = () => {
         >
           <div class="row">
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
-            </div>
-            <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
           </div>
           <div class="row">
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
           </div>
           <div class="row">
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
             <div class="col-sm">
-              <img src={pic} height="100px" width="100px" alt="meetupImg" />
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
+            </div>
+            <div class="col-sm">
+              <LazyLoadImage
+                src={pic}
+                height="100px"
+                width="100px"
+                alt="meetupImg"
+              />
             </div>
           </div>
         </div>

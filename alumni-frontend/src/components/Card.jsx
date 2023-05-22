@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const imgUrl =
   "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-614810.jpg&fm=jpg";
 // divide-y divide-slate-100
@@ -23,12 +24,12 @@ const Card = () => {
         </div>
         <div className="p-[8px] mt-[8px]">
           <center>
-            <img
+            <LazyLoadImage
               src={imgUrl}
               alt="alumniImg"
               width="280px"
               className="rounded-lg"
-            ></img>
+            />
           </center>
         </div>
         <div className="text-center text-[#107CAF] font-medium text-[13px]">
@@ -37,7 +38,7 @@ const Card = () => {
 
         <div className="flex flex-row my-[20px]">
           <div className="ml-[20px]">
-            <img
+            <LazyLoadImage
               src={imgUrl}
               alt="alumniImg"
               width="80px"
@@ -46,8 +47,6 @@ const Card = () => {
             />
           </div>
           <div className="p-[6px]">
-            {/* <p className="text-2xl font-semibold">Aman Gupta</p>
-          <p className="text-[#778386] mt-[0px]">Software Development Engineer</p> */}
             <p>
               <span className="text-[22px] font-medium">Aman Gupta</span>
               <br />

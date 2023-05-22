@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import donation from "../../assets/donation.jpg";
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function DonationGateway() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +37,7 @@ export default function DonationGateway() {
         <>
           <Navbar />
           <div class="msgDirectorBanner">
-            <img
+            <LazyLoadImage
               src={donation}
               style={{ filter: "blur(3px)", width: "100%" }}
             />

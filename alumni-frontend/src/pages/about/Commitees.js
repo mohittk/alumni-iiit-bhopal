@@ -4,6 +4,7 @@ import "../../styles/index.css";
 import Footer from "../../components/Footer";
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Commitees() {
   const [isLoading, setIsLoading] = useState(true);
@@ -36,7 +37,7 @@ export default function Commitees() {
         <>
           <Navbar />
           <div class="msgDirectorBanner">
-            <img
+            <LazyLoadImage
               src="https://images.shiksha.com/mediadata/images/1550718239phpVMfSEn.jpeg"
               style={{ filter: "blur(3px)", width: "100%" }}
             />

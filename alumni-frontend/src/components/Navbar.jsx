@@ -8,6 +8,7 @@ import { ImLocation } from "react-icons/im";
 import image from "../assets/iiitb-full.png";
 import { Link } from "react-router-dom";
 import Button from '@mui/material/Button';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 function Navbar() {
   return (
     <>
@@ -37,7 +38,7 @@ function Navbar() {
         <div className="flex flex-row items-center w-full">
           <h3 className="font-opensans text-[2.2rem] text-[#2a004f] font-bold w-[30%] pl-[3%]" style={{fontFamily: "'Playfair Display', serif", textShadow: '4px 3px #F1EDC7'}}> Alumni IIIT Bhopal</h3>
           <span className="w-[50%] flex items-center justify-center mr-[4%]">
-            <img src={image} alt="logo-iiitb" width='9000px'/>
+            <LazyLoadImage src={image} alt="logo-iiitb" width='9000px'/>
           </span>
           <Button variant="contained">LOGIN / SIGNUP</Button>
         </div>
