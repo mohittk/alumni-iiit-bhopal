@@ -34,6 +34,7 @@ function Navbar() {
           </div>
         </div>
         <div className="flex flex-row justify-between px-[60px] py-[5px] w-full items-center">
+          <h1 className="font-opensans text-[4rem] text-[#2a004f] font-bold w-[40%]"> Alumni IIIT Bhopal</h1>
           <span className="w-[50%] flex items-center justify-center">
             <img src={image} alt="logo-iiitb" />
           </span>

@@ -104,7 +104,7 @@ export default function ContactUs() {
           <br />
           <br />
           <div style={{ backgroundColor: "whitesmoke", padding: "100px" }}>
-            <div class="container">
+            <div class="container font-opensans">
               <div class="row">
                 <div class="col-sm">
                   <img

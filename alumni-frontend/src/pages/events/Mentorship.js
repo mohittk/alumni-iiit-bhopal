@@ -56,10 +56,12 @@ export default function Mentorship() {
             </div>
           </div>
 
-          <div className="mentorship-data m-5 p-5">
+          <div className="mentorship-data m-5">
             <h2 className="font-opensans font-bold text-[#2a004f] text-center text-[2.5rem]">
               IIIT Bhopal Alumni - Student Mentorship Programs
             </h2>
+            <p className="font-opensans font-semibold text-[1.5rem] m-2">
+Mentorship programs led by alumni of the college offer a unique and invaluable opportunity for current students to receive guidance from individuals who have walked the same path. Alumni mentors bring a wealth of experience and insights specific to the college's culture, academic programs, and career paths. By participating in these mentorship programs, students can gain valuable advice, industry connections, and real-world perspectives that can greatly enhance their educational journey and future career prospects. The alumni mentors' dedication to giving back to their alma mater creates a strong sense of community and fosters a lifelong bond between current students and successful graduates.</p>
           </div>
           <div className="flex flex-row justify-center">
           {programs ?  programs.map((program) => (

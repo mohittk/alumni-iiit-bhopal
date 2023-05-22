@@ -27,7 +27,7 @@ export default function Table(){
       }, []);
     return(
         <>
-        {profileYear.map((temp)=> (
+        {profileYear ?  profileYear.map((temp)=> (
             <>
             <div class="container mx-auto px-4 sm:px-8 font-opensans">
   <div class="py-8">
@@ -120,11 +120,9 @@ export default function Table(){
   </div>
 </div>
             </>
-        ))}
+        )): ('')}
+       
         
-        
-          
-
             </>
        
     )
