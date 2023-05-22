@@ -5,14 +5,24 @@ import mentorPoster from "../../assets/mentor-poster.jpg";
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
 import SessionCard from "../../components/SessionCard";
+import { get_all_programs } from "../../controllers/StudentRoutes";
 
 export default function Mentorship() {
   const [isLoading, setIsLoading] = useState(true);
+  const [programs, setPrograms] = useState([]);
+
 
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
+  }, []);
+
+  useEffect(() => {
+    get_all_programs().then((data) => {
+      console.log(data.Message);
+      setPrograms(data.Message);
+    })
   }, []);
   return (
     <>
@@ -51,19 +61,20 @@ export default function Mentorship() {
               IIIT Bhopal Alumni - Student Mentorship Programs
             </h2>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm">
-                <SessionCard name="Resume Review Session" presenter="Shubankar Sharma"/>
-              </div>
-              <div class="col-sm">
-                <SessionCard name="Guidance on cracking Top companies" presenter="Pankaj Sharma"/>
-              </div>
-              <div class="col-sm">
-                <SessionCard name="Placement in Core Electronics" presenter="Ashutosh Singh Parmar"/>
-              </div>
+          <div className="flex flex-row justify-center">
+          {programs ?  programs.map((program) => (
+            <>
+            <div className="m-3">
+            <SessionCard name={program.program_name} presenter={program.mentor_name} img={program.imgUrl}/>
             </div>
+         
+            </>
+          ))
+          
+          : ('No Mentorship Programs Conducted yet')}
           </div>
+         
+         
           <br />
           <br />
           <br />

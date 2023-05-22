@@ -13,7 +13,7 @@ export default function SessionCard(props) {
         <div className="p-[8px] mt-[8px]">
           <center>
             <img
-              src={imgUrl}
+              src={props.img}
               alt="alumniImg"
               className="rounded-lg"
             ></img>

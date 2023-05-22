@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const StudentSchema = require("../models/studentProfile");
+const MentorProgram  = require("../models/MentorProgram");
 
 router.post('/add-profile', async(req, res) => {
     try {
@@ -28,7 +29,7 @@ router.post('/add-profile', async(req, res) => {
 router.get('/get-all-profiles', async(req, res) => {
     try {
         const profiles = await StudentSchema.find();
-        console.log(profiles);
+        // console.log(profiles);
         return res.json({"Message" : profiles});
     } catch(err){
         return res.json({"Error" : err});
@@ -64,6 +65,34 @@ router.get('/get-by-year', async(req, res) => {
         return res.json({"Message": newArr});
     } catch(err){
         return res.json({"Error" : err});
+    }
+})
+
+router.post('/add-program', async (req, res) => {
+    try {
+        const {mentor_name, program_name, imgUrl} = req.body;
+
+    const program = new MentorProgram({
+        mentor_name, program_name, imgUrl
+    })
+
+    await program.save();
+
+    return res.json({"Message": "Program added successfully", program});
+    } catch (err) {
+        console.log(err);
+        return res.json({"Message" : err});
+    }
+    
+})
+
+router.get('/get-all-programs', async function (req, res) {
+    try {
+        const programs = await MentorProgram.find();
+        return res.json({"Message" : programs});
+    } catch (err){
+        console.log(err);
+        return res.json({"Message" : err});
     }
 })
 
