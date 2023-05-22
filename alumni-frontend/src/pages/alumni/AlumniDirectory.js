@@ -4,9 +4,13 @@ import Footer from "../../components/Footer";
 import mentorPoster from "../../assets/mentor-poster.jpg";
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
-import { get_all_profiles, get_profiles_by_year } from "../../controllers/StudentRoutes";
+import {
+  get_all_profiles,
+  get_profiles_by_year,
+} from "../../controllers/StudentRoutes";
 import Table from "../../components/Table";
 import { AiTwotoneMobile } from "react-icons/ai";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function AlumniDirectory() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +43,7 @@ export default function AlumniDirectory() {
         <>
           <Navbar />
           <div className="msgDirectorBanner">
-            <img
+            <LazyLoadImage
               src={mentorPoster}
               style={{ filter: "blur(3px)", width: "100%" }}
             />
@@ -48,10 +52,7 @@ export default function AlumniDirectory() {
             </div>
           </div>
 
-        
-
           <Table />
-
 
           <Footer />
         </>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const borderField = {
   border: "1px solid black",
@@ -77,12 +78,12 @@ const QueryForm = () => {
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <img
+              <LazyLoadImage
                 src="https://www.blogtyrant.com/wp-content/uploads/2011/02/best-about-us-pages.png"
                 alt="contact us"
                 width="636px"
                 className="rounded-lg"
-              ></img>
+              />
             </div>
             <div class="col-sm">
               <div class="bg-img">

@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 const imgUrl =
   "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?cs=srgb&dl=pexels-simon-robben-614810.jpg&fm=jpg";
 
@@ -12,11 +13,11 @@ export default function SessionCard(props) {
         </div>
         <div className="p-[8px] mt-[8px]">
           <center>
-            <img
+            <LazyLoadImage
               src={props.img}
               alt="alumniImg"
               className="rounded-lg"
-            ></img>
+            />
           </center>
         </div>
       </div>

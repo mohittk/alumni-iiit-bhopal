@@ -7,6 +7,7 @@ import { RiLinkedinFill } from "react-icons/ri";
 import { ImLocation } from "react-icons/im";
 import image from "../assets/iiitb-full.png";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 function Navbar() {
   return (
     <>
@@ -34,9 +35,12 @@ function Navbar() {
           </div>
         </div>
         <div className="flex flex-row justify-between px-[60px] py-[5px] w-full items-center">
-          <h1 className="font-opensans text-[4rem] text-[#2a004f] font-bold w-[40%]"> Alumni IIIT Bhopal</h1>
+          <h1 className="font-opensans text-[4rem] text-[#2a004f] font-bold w-[40%]">
+            {" "}
+            Alumni IIIT Bhopal
+          </h1>
           <span className="w-[50%] flex items-center justify-center">
-            <img src={image} alt="logo-iiitb" />
+            <LazyLoadImage src={image} alt="logo-iiitb" />
           </span>
           <span className="flex w-[50%] gap-[15px]  items-center justify-center">
             <ImLocation className="text-[60px] text-[#0a6db7]" />

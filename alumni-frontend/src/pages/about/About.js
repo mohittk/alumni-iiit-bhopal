@@ -6,6 +6,7 @@ import fullimg4 from "../../assets/iiitb-upper4.jpg";
 import fullimg5 from "../../assets/iiitb-upper5.jpg";
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function About() {
   const [isLoading, setIsLoading] = useState(true);
@@ -39,7 +40,7 @@ export default function About() {
         <>
           <Navbar />
           <div class="msgDirectorBanner">
-            <img
+            <LazyLoadImage
               src="https://images.shiksha.com/mediadata/images/1550718239phpVMfSEn.jpeg"
               style={{ filter: "blur(3px)", width: "100%" }}
             />
@@ -49,19 +50,19 @@ export default function About() {
           </div>
           <div className="m-4 p-4 about-us-section flex flex-col justify-center items-center font-opensans">
             <div className="grid justify-center grid-cols-3 gap-3">
-              <img
+              <LazyLoadImage
                 className="rounded-lg"
                 src={fullimg3}
                 width={600}
                 height={120}
               />
-              <img
+              <LazyLoadImage
                 className="rounded-lg"
                 src={fullimg4}
                 width={600}
                 height={120}
               />
-              <img
+              <LazyLoadImage
                 className="rounded-lg"
                 src={fullimg5}
                 width={600}

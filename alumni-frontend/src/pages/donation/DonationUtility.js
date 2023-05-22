@@ -8,12 +8,16 @@ import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import blue from "@material-ui/core/colors/blue";
 import InfoIcon from "@mui/icons-material/Info";
 import donation from "../../assets/donation.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function DonationUtility() {
   return (
     <div>
       <Navbar />
       <div class="msgDirectorBanner">
-        <img src={donation} style={{ filter: "blur(3px)", width: "100%" }} />
+        <LazyLoadImage
+          src={donation}
+          style={{ filter: "blur(3px)", width: "100%" }}
+        />
         <div class="centerMsgDirector font-opensans p-4 bg-[#2a004f]">
           Donation Utilization
         </div>
@@ -91,7 +95,7 @@ export default function DonationUtility() {
         <div class="container font-opensans">
           <div class="row">
             <div class="col-sm">
-              <img
+              <LazyLoadImage
                 src="https://alumni.iiita.ac.in/wp-content/uploads/2021/02/infrastructure.jpg"
                 style={{
                   boxShadow: "10px 10px 3px 2px rgba(0,0.2,0.2, 0.2",
@@ -111,7 +115,6 @@ export default function DonationUtility() {
                 rankings of educational institutions. Possible categories under
                 infrastructure are :
               </h6>
-             
             </div>
           </div>
         </div>
@@ -129,10 +132,9 @@ export default function DonationUtility() {
                 their education in IIIT-A despite having inadequate financial
                 resources. Possible categories under Students Support are:
               </h6>
-             
             </div>
             <div class="col-sm">
-              <img
+              <LazyLoadImage
                 src="https://pbs.twimg.com/media/ECmCvGiWwAEY_Ql.jpg"
                 style={{
                   boxShadow: "10px 10px 3px 2px rgba(0,0.2,0.2, 0.2",
@@ -146,7 +148,7 @@ export default function DonationUtility() {
         <div class="container font-opensans">
           <div class="row">
             <div class="col-sm">
-              <img
+              <LazyLoadImage
                 src="https://alumni.iiita.ac.in/wp-content/uploads/2021/02/infrastructure.jpg"
                 style={{
                   boxShadow: "10px 10px 3px 2px rgba(0,0.2,0.2, 0.2",
@@ -164,7 +166,6 @@ export default function DonationUtility() {
                 category in donation purpose.Possible categories under Academics
                 are:
               </h6>
-             
             </div>
           </div>
         </div>
@@ -178,10 +179,9 @@ export default function DonationUtility() {
               <h6 className="text-xl">
                 The others contains the two major issue which is given below.
               </h6>
-             
             </div>
             <div class="col-sm">
-              <img
+              <LazyLoadImage
                 src="https://alumni.iiita.ac.in/wp-content/uploads/2021/02/infrastructure.jpg"
                 style={{
                   boxShadow: "10px 10px 3px 2px rgba(0,0.2,0.2, 0.2",

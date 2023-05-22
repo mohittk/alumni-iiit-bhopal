@@ -1,5 +1,6 @@
 import React from "react";
 import convo1 from "../assets/convo-poster.jpeg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ConvoCarousel = () => {
   return (
@@ -21,21 +22,33 @@ const ConvoCarousel = () => {
         </ol>
         <div class="carousel-inner rounded-xl">
           <div class="carousel-item active">
-            <img class="d-block w-100" src={convo1} alt="First slide" />
+            <LazyLoadImage
+              class="d-block w-100"
+              src={convo1}
+              alt="First slide"
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5 style={{ fontSize: "32px" }}>Convocation 2023</h5>
               <p>Convocation for the students of batch 2020-2021</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src={convo1} alt="First slide" />
+            <LazyLoadImage
+              class="d-block w-100"
+              src={convo1}
+              alt="First slide"
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5 style={{ fontSize: "32px" }}>Convocation 2023</h5>
               <p>Convocation for the students of batch 2020-2021</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src={convo1} alt="First slide" />
+            <LazyLoadImage
+              class="d-block w-100"
+              src={convo1}
+              alt="First slide"
+            />
             <div class="carousel-caption d-none d-md-block">
               <h5 style={{ fontSize: "32px" }}>Convocation 2023</h5>
               <p>Convocation for the students of batch 2020-2021</p>

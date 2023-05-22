@@ -3,6 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { useState, useEffect } from "react";
 import { ThreeCircles } from "react-loader-spinner";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const pathPic = "Images/contact2.png";
 const borderField = {
@@ -93,7 +94,7 @@ export default function ContactUs() {
         <>
           <Navbar />
           <div class="msgDirectorBanner">
-            <img
+            <LazyLoadImage
               src="https://images.shiksha.com/mediadata/images/1550718239phpVMfSEn.jpeg"
               style={{ filter: "blur(3px)", width: "100%" }}
             />
@@ -107,7 +108,7 @@ export default function ContactUs() {
             <div class="container font-opensans">
               <div class="row">
                 <div class="col-sm">
-                  <img
+                  <LazyLoadImage
                     src={pathPic}
                     width="450px"
                     style={{ borderRadius: "7%" }}
